@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Reservas </title>
+  </head>
+  <body>
+    <!-- Frase/título de destaque -->
+    <div align="center">
+      <h2>Reserve já o seu passeio!</h2>
+    </div>
+
+    <!-- Formulário com o action (ação de submissão) apontando para a  área
+        de armazenamento do formspree e o método post (envio de dados) definido. -->
+    <form id="form-reserva" action="https://formspree.io/f/maylbqzv" method="post">
+
+        <label for="fname">
+					Nome do solicitante: <input type="text" id="fname" name="nome-cliente"/> <br> <br>
+				</label>
+
+        <!-- Campo para seleção do dia do passeio com a data mínima para o dia 11/11/2020 -->
+				<label for="fdata">
+					Dia do passeio: <input type="date" id="fdate" name="dia-passeio"
+          min="2020-11-11"/> <br> <br>
+				</label>
+
+        <!-- Campo numérico para definição da quantidade de pessoas.
+            Aceita números de 0 à 20 (atributos min e max).
+            Possui tamanho para 2 dígitos (atributo maxlength)  -->
+				<label for="fqtde-pessos">
+					Quantidade de pessoas: <input type="number" id="fnum"
+          name="qtde-pessoas"	min="0" max="20" maxlength="2"/> <br> <br>
+				</label>
+
+        <!-- Define as opções de pacotes em uma lista de seleção. -->
+				<label for="fpacotes">
+					Tipo de pacote:
+					<select id="fpacote"name="pacotes">
+            <!-- A segunda opção foi a marcada com o atributo selected
+                para aparecer como selecionado na lista de seleção -->
+						<option value="bs" name="basico"> Básico (apenas Buggy) </option>
+						<option value="it" name="intermediario "selected>
+              Intermediário (Buggy e Barco) </option>
+						<option value="cp" name="completo"> Completo (Buggy, Barco e Dromedário) </option>
+					</select> <br> <br>
+				</label>
+
+    <!--  Caixas de seleção para o cliente selecionar as praias de destino -->
+		<label for="fpraias">
+			Destinos:<br>
+        <input type="checkbox" name="genipabu"/> Genipabu <br>
+  			<input type="checkbox" name="pirangi"/> Pirangi <br>
+  			<input type="checkbox" name="galinhos"/> Galinhos <br>
+  		  <input type="checkbox" name="b-cunhau"/> B. de Cunhaú
+        <br><br>
+		</label>
+
+    <!-- Área para inserção de alguma observação pertinente ao passeio
+        O tamanho da área para inserção do texto pode ser definido através
+        dos atributos rows e cols. Estes atributos representam linhas e colunas
+        de caracteres da caixa de texto, no qual cada caractere (incluindo espaços)
+        são considerados. -->
+		<label for="fobs">
+			Observações:<br>
+      <textarea id="fobs" name="observacao" rows="10" cols="40"></textarea> <br> <br>
+		</label>
+
+    <!-- Botão de submissão do formulário.
+        Após submeter o formulário, o cliente é redirecionado para a página de
+        agradecimentos do formspree. Clicando em "go back" ele volta para a
+        página do formulário -->
+ 		<input id="btn-reservar" type="submit" value="Reservar"/>
+    <!-- Botão para voltar para a página inicial -->
+    <button type="submit" name="voltar" formaction="home.html"> Voltar </button>
+    <!-- fim do formulário -->
+  </body>
+</html>
