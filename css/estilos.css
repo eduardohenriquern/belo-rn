@@ -1,0 +1,85 @@
+body{
+  background-color: ghostwhite;
+  font-family: 'Roboto';
+  color: darkslategray;
+}
+
+h1, h2, h3{
+  text-align: center;
+}
+
+p{
+  text-align: justify;
+}
+
+.praias{
+  margin: 5% 10% 0% 10%;
+
+}
+
+.card{
+  border-width: 1px;
+  border-style: solid;
+  border-color: darkslategray;
+
+  width: 300px;
+  height: 350px;
+  float: left;
+  margin: 10px 5px 10px 5px;
+  padding: 10px 10px 10px 10px;
+}
+
+.links{
+  clear: left;
+}
+
+.right{
+  float: right;
+  margin-top: 30px;
+  margin-right: 30px;
+  clear: right;
+}
+
+.left{
+  float: left;
+  margin-left: 30px;
+  clear: left;
+}
+
+.tabela-pacotes{
+  margin: 0% 30% 0% 33%;
+
+}
+
+th{
+  background-color: lightgrey;
+}
+
+tr, td, th{
+  padding: 5px 5px 5px 5px;
+}
+
+form{
+  border-width: 1px;
+  border-style: solid;
+  border-color: darkslategray;
+  margin: 0% 33% 0% 33%;
+  width: auto;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+}
+
+.input{
+  padding: 10px 10px 10px 10px;
+}
+
+#btn-reservar{
+  background-color: dodgerblue;
+  color: white;
+  padding: 5px;
+}
+
+#btn-voltar{
+  background-color: lightgrey;
+  padding: 5px;
+}

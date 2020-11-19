@@ -3,36 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title> Belo RN </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
     <!-- Título inicial -->
-    <div align="center">
+    <div class="titulos">
       <h1>Conheça as belezas do RN</h1>
       <h2>Suas férias no melhor lugar!</h2>
     </div>
 
-    <!-- Links para realizar a reserva ou ver os pacotes -->
-    <div align="right">
-      <a href="form-reserva.html">Fazer reserva</a> <br><br>
-      <a href="pacotes.html"> Ver pacotes </a>
+    <!-- Praias -->
+    <div class="praias">
+      <div class="card">
+        <h2>Genipabu e suas <i>dunas</i></h2>
+        <p>As dunas e a incrível vista pro mar são seu cartão postal</p>
+        <img class="foto-praia" src="imagens/genipabu.jpg" alt="As dunas de Genipabu"
+        width="300"/>
+      </div>
+
+      <div class="card">
+        <h2>Barra de Cunhaú: o <i>caribe</i> nordestino</h2>
+        <p> Sol, mar azul e belos passeios de barco</p>
+  			<img class="foto-praia" src="imagens/barra-cunhau.jpg" alt="O mar da Barra de Cunhaú"
+        width="300"/>
+      </div>
+      <div class="card">
+        <h2> As <i>piscinas naturais</i> de Galinhos</h2>
+  			<p> Um paraíso que mescla beleza e sossego</p>
+  			<img class="foto-praia" src="imagens/galinhos.jpg" alt="As piscinas de Galinhos"
+        width="300" />
+      </div>
     </div>
 
-    <!-- Praias -->
-    <div align="center">
-      <h2><i>Genipabu</i> e suas dunas</h2>
-      <p>As dunas e a incrível vista pro mar são seu cartão postal</p>
-      <img src="imagens/genipabu.jpg" alt="As dunas de Genipabu"
-      width="400" height="300"/>
-
-      <h2><i>Barra de Cunhaú:</i> o caribe nordestino</h2>
-      <p> Sol, mar azul e belos passeios de barco.</p>
-			<img src="imagens/barra-cunhau.jpg" alt="O mar da Barra de Cunhaú"
-      width="400" height="300"/>
-
-      <h2> As piscinas naturais de <i>Galinhos</i> </h2>
-			<p> Um paraíso que mescla beleza e sossego.</p>
-			<img src="imagens/galinhos.jpg" alt="As piscinas de Galinhos"
-      width="400" height="300"/>
+    <!-- Links para realizar a reserva ou ver os pacotes -->
+    <div class="links">
+      <a class="right" href="form-reserva.html">Fazer reserva</a> <br><br>
+      <a class="left" href="pacotes.html"> Ver pacotes </a>
     </div>
 
   </body>
