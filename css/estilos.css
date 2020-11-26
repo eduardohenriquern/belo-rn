@@ -1,38 +1,92 @@
+/* Define, para toda a página, uma cor de fundo, a fonte dos textos e a cor */
 body{
   background-color: ghostwhite;
   font-family: 'Roboto';
-  color: darkslategray;
+  color : darkslategray;
 }
 
-h1, h2, h3{
+/* Deixa os títulos centralizados */
+h1, h2, h3 {
   text-align: center;
 }
 
+h4{
+  text-align: left;
+  margin: 3px;
+}
+
+/* Deixa o texto do parágrafo justificado */
 p{
   text-align: justify;
 }
 
+/* Espaçamento da div com os cards */
 .praias{
+  /* top right bottom left */
   margin: 5% 10% 0% 10%;
-
 }
 
 .card{
+  /* Espessura, estilo e cor da borda do card */
   border-width: 1px;
   border-style: solid;
   border-color: darkslategray;
 
+  /* Comprimento e altura do card */
   width: 300px;
   height: 350px;
+  /* Posicionamento dos cards um ao lado do outro */
   float: left;
+  /* Espaçamento entre cards e preenchimento interno
+  para distanciar  a imagem e o texto da borda */
   margin: 10px 5px 10px 5px;
   padding: 10px 10px 10px 10px;
 }
 
+/* Classe da div que organiza os links do menu */
 .links{
-  clear: left;
+  margin: 3px;
 }
 
+/* Tela pacotes: posiciona o botão-link de voltar para a home
+na lateral esquerda */
+.link-home{
+  display: inline-block;
+  position: relative;
+  left: 20%;
+}
+
+/* Tela pacotes: posiciona o botão-link de ir para o formulário
+na lateral direita */
+.link-form{
+  display: inline-block;
+  position: absolute;
+  right: 20%;
+}
+
+/* Seleciona o elemento <a> da classe link-form
+e aplica a formatação de um botão */
+.link-form a, .link-home a {
+  display: inline-block;
+  background-color: ghostwhite;
+  border: 1px solid darkslategray;
+  color: darkslategray;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+/* Tela pacotes: muda a cor do botão-link ao passar
+o mouse por cima */
+a:hover{
+  background-color: darkslategray;
+  color: ghostwhite;
+}
+
+/* Posiciona elementos na lateral direita.
+  Neste exemplo está sendo utilizado para
+  posicionar os links do formulário e tabela de pacotes */
 .right{
   float: right;
   margin-top: 30px;
@@ -40,46 +94,187 @@ p{
   clear: right;
 }
 
+
+/* Posiciona elementos na lateral esquerda.
+  Neste exemplo está sendo utilizado para
+  posicionar os links do formulário e tabela de pacotes */
 .left{
   float: left;
   margin-left: 30px;
   clear: left;
 }
 
+/* Lista com os links do menu de navegação */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: lightgray;
+}
+
+/* Links do menu de navegação */
+li a {
+  display: block;
+  color: darkslategray;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+/* Muda a cor do item no menu de navegação
+ao passar passar o mouse */
+li a:hover{
+  background-color: darkslategray;
+  color: ghostwhite;
+}
+
+/* A classe active está definida no item que representam
+a página inicial, deixando selecionado para mostrar que
+aquela é a página inicial */
+li a.active{
+  background-color: darkslategray;
+  color: ghostwhite;
+}
+
+/* Define uma margem para a tabela*/
 .tabela-pacotes{
-  margin: 0% 30% 0% 33%;
-
+  margin: 0% 20% 0% 20%;
 }
 
+/* Define uma cor de fundo para a célula do cabeçalho */
 th{
-  background-color: lightgrey;
+  background-color: darkslategray;
+  color: ghostwhite;
 }
 
+/* Define um preenchimento para as células da tabela */
 tr, td, th{
-  padding: 5px 5px 5px 5px;
+  padding: 10px 10px;
+  width: 10%;
 }
 
+/* Início - Estilo do formulário */
+/* Formata a aparência do formulário */
 form{
-  border-width: 1px;
-  border-style: solid;
-  border-color: darkslategray;
-  margin: 0% 33% 0% 33%;
+  margin: 0% 18% 10% 18%;
   width: auto;
   height: auto;
   padding: 10px 10px 10px 10px;
+  box-sizing: border-box; /* considera o box model - margem + borda + preenchimento */
 }
 
-.input{
-  padding: 10px 10px 10px 10px;
+/* Entre colchetes estão os seletores de atributos HTML.
+Selecionam um campo input de acordo com o atributo type
+*/
+input[type=text], input[type=date], input[type=number], select, textarea{
+  width : 100%; /* faz o campo tomar 100% da largura do formulário */
+  padding: 12px 20px;
+  margin: 8px 10px;
+  display: inline-block; /* Vai tomar a altura de mais de uma linha */
+  border: 1px solid darkslategray;
+  border-radius: 4px; /* Adiciona uma borda circular ao campo */
+  /* incorpora os valores de padding e border na altura e largura.
+  Sem o box-sizing estes valores seriam somados à largura e altura */
+  box-sizing: border-box;
 }
 
+/* classe do campo nome */
+.name{
+  margin: 8px 20px;
+}
+
+select, textarea, input[type=date]{
+  background-color: white;
+  font-family: 'Roboto';
+  color: darkslategray;
+  font-size: 15px;
+}
+
+/* Classes dos campos que serão posicionados
+lado a lado em linha e bloco */
+.date, .qtde-pessoas, .pacotes, .box-praias, .obs{
+  display: inline-block;
+  margin: 8px 15px;
+  box-sizing: border-box;
+}
+
+/* div que contém os campos de checkbox e textarea
+Definido com posionamento relativo */
+div.check-text{
+  position: relative;
+}
+
+/* Posiciona os campos checkbox na parte
+superior esquerda da div */
+div.box-praias{
+  position: absolute;
+  top: auto;
+  left: 0;
+}
+
+/* Classe dos campos checkbox */
+.cb{
+  display: block;
+  margin: 0 3px 5px 3px;
+  padding: 0 3px 5px 3px;
+}
+
+/* Define margem e preenchimento para os checkbox */
+checkbox{
+  padding: 8px;
+  margin: 8px;
+  box-sizing: border-box;
+}
+
+/* Posiciona o textarea à esquerda dos checkbox  */
+div.obs{
+  position: relative;
+  display: inline-block;
+  left: 30%;
+}
+
+/* Define uma uma cor de fundo para o botão de submissão
+do formulário, uma cor para o texto e um preenchimento */
 #btn-reservar{
-  background-color: dodgerblue;
+  background-color: slategray;
+  border: none;
   color: white;
-  padding: 5px;
+  padding: 16px 32px;
+  font-size: 15px;
+  margin: 8px 10px;
+  cursor: pointer; /* Muda o cursor do mouse para um apontador */
 }
 
+/* Define uma uma cor de fundo para o botão de voltar
+à tela inicial e um preenchimento */
 #btn-voltar{
-  background-color: lightgrey;
-  padding: 5px;
+  background-color: darkgray;
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 8px 8px;
+  cursor: pointer;
+  /* Posiciona relativo à esquerda */
+  position: relative;
+  left: auto;
+}
+
+/* Div que organiza os botões na parte inferior do formulário */
+.btn{
+  margin-bottom: 20px;
+  float: right;
+  clear: right;
+}
+
+/* Muda a cor do botão ao sobrepor o mouse */
+#btn-reservar:hover{
+  background-color: darkslategray;
+}
+
+/* Muda a cor do botão ao sobrepor o mouse */
+#btn-voltar:hover{
+  background-color: gray;
+  color: white;
 }
