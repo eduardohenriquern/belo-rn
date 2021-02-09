@@ -1,58 +1,78 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title> Belo RN </title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="/belo-rn/css/estilos.css">
-  </head>
-  <body>
-    <!-- Título inicial -->
-    <div class="titulos">
-      <h1>Conheça as belezas do RN</h1>
-      <h2>Suas férias no melhor lugar!</h2>
-    </div>
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="utf-8">
+          <title> Belo RN </title>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+          <link rel="stylesheet" href="css/estilos.css">
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        </head>
+        <body>
+          <div class="w3-panel w3-yellow">
+            <h3>Todos contra a COVID-19!</h3>
+            <p>Use sempre sua máscara! Troque-a a cada 3 ou 4 horas!</p>
+            <span onclick="this.parentElement.style.display='none'"
+            class="w3-button w3-display-topright"> Fechar </span>
+          </div>
+          <!-- Título inicial -->
+          <div class="titulos">
+            <h1>Conheça as belezas do RN</h1>
+            <h2>Suas férias no melhor lugar!</h2>
+          </div>
 
-    <!-- Lista vertical de Links -->
-    <div class="links">
-      <h4>Menu</h4>
-      <ul>
-        <li>
-          <a class="active" href="home.html"> Página inicial</a>
-        </li>
-        <li>
-          <a href="pacotes.html"> Ver pacotes </a>
-        </li>
-        <li>
-          <a href="form-reserva.html">Fazer reserva</a>
-        </li>
-      </ul>
-    </div>
+          <!-- Lista vertical de Links -->
+          <div class="links">
+            <h4>Menu</h4>
+            <ul>
+              <li>
+                <a class="active" href="home.html"> Página inicial</a>
+              </li>
+              <li>
+                <a href="pacotes.html"> Ver pacotes </a>
+              </li>
+              <li>
+                <a href="form-reserva.html">Fazer reserva</a>
+              </li>
+            </ul>
+          </div>
 
-    <!-- Praias -->
-    <div class="praias">
-      <div class="card">
-        <h2>Genipabu e suas <i>dunas</i></h2>
-        <p>As dunas e a incrível vista pro mar são seu cartão postal</p>
-        <img class="foto-praia" src="imagens/genipabu.jpg" alt="As dunas de Genipabu"
-        width="300"/>
-      </div>
+          <!-- Praias -->
+          <div class="praias w3-row-padding">
+            <div class="w3-third">
+              <div class="w3-card">
+                <div class="w3-container">
+                  <h2>Genipabu e suas <i>dunas</i></h2>
+                  <p>As dunas e a incrível vista pro mar são seu cartão postal</p>
+                </div>
+                <img class="foto-praia" src="imagens/genipabu.jpg" alt="As dunas de Genipabu"
+                style="width:100%"/>
+              </div>
+            </div>
 
-      <div class="card">
-        <h2>Barra de Cunhaú: o <i>caribe</i> nordestino</h2>
-        <p> Sol, mar azul e belos passeios de barco</p>
-  			<img class="foto-praia" src="imagens/barra-cunhau.jpg" alt="O mar da Barra de Cunhaú"
-        width="300"/>
-      </div>
-      <div class="card">
-        <h2> As <i>piscinas naturais</i> de Galinhos</h2>
-  			<p> Um paraíso que mescla beleza e sossego</p>
-  			<img class="foto-praia" src="imagens/galinhos.jpg" alt="As piscinas de Galinhos"
-        width="300" />
-      </div>
-    </div>
+            <div class="w3-third">
+              <div class="w3-card" style="height: 415px">
+                <div class="w3-container">
+                  <h2>Barra de Cunhaú: o <i>caribe</i> nordestino</h2>
+                  <p> Sol, mar azul e belos passeios de barco</p>
+                </div>
+                <img class="foto-praia" src="imagens/barra-cunhau.jpg" alt="O mar da Barra de Cunhaú"
+              style="width:100%"/>
+              </div>
+            </div>
+
+            <div class="w3-third">
+              <div class="w3-card" style="height: 415px">
+                <div class="w3-container">
+                  <h2> As <i>piscinas naturais</i> de Galinhos</h2>
+            			<p> Um paraíso que mescla beleza e sossego</p>
+                </div>
+                <img class="foto-praia" src="imagens/galinhos.jpg" alt="As piscinas de Galinhos"
+             style="width:100%"/>
+              </div>
+            </div>
+          </div>
 
 
 
-  </body>
-</html>
+        </body>
+      </html>

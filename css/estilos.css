@@ -9,6 +9,9 @@ body{
 h1, h2, h3 {
   text-align: center;
 }
+.titulos {
+  color: ghostwhite;
+}
 
 h4{
   text-align: left;
@@ -23,7 +26,7 @@ p{
 /* Espaçamento da div com os cards */
 .praias{
   /* top right bottom left */
-  margin: 5% 10% 0% 10%;
+  margin: 5% 5% 10% 5%;
 }
 
 .card{
@@ -79,9 +82,10 @@ e aplica a formatação de um botão */
 
 /* Tela pacotes: muda a cor do botão-link ao passar
 o mouse por cima */
-a:hover{
+.link-home a:hover, .link-form a:hover{
   background-color: darkslategray;
   color: ghostwhite;
+
 }
 
 /* Posiciona elementos na lateral direita.
@@ -114,7 +118,7 @@ ul {
 }
 
 /* Links do menu de navegação */
-li a {
+a {
   display: block;
   color: darkslategray;
   padding: 8px 10px;
@@ -123,7 +127,7 @@ li a {
 
 /* Muda a cor do item no menu de navegação
 ao passar passar o mouse */
-li a:hover{
+a:hover{
   background-color: darkslategray;
   color: ghostwhite;
 }
@@ -131,7 +135,7 @@ li a:hover{
 /* A classe active está definida no item que representam
 a página inicial, deixando selecionado para mostrar que
 aquela é a página inicial */
-li a.active{
+a.active{
   background-color: darkslategray;
   color: ghostwhite;
 }
