@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Belo RN </title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!-- Framework W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+
+    <div class="w3-panel w3-yellow">
+      <h3>Todos contra a COVID-19!</h3>
+      <p>Use sempre sua máscara! Troque-a a cada 3 ou 4 horas!</p>
+      <span onclick="this.parentElement.style.display='none'"
+      class="w3-button w3-display-topright"> Fechar </span>
+    </div>
+
+    <!-- Barra Lateral -->
+    <div id="barra" class="w3-sidebar w3-bar-block" style="width:20%; display: none">
+      <h5 class="w3-bar-item w3-button"
+      onclick="document.getElementById('barra').style.display='none'"> Voltar </h5>
+
+      <a class="active w3-bar-item w3-button" href="inicio.html"> Página inicial</a>
+      <a class="w3-bar-item w3-button" href="pacotes.html"> Ver pacotes </a>
+      <a class="w3-bar-item w3-button" href="form-reserva.html">Fazer reserva</a>
+
+    </div>
+
+    <!-- Título inicial -->
+    <div class="titulos w3-blue-grey">
+      <!-- ícone do menu -->
+      <span class="material-icons w3-button w3-margin-top"
+      onclick="document.getElementById('barra').style.display='block'"> menu </span>
+      <div class="w3-container">
+        <h1>Conheça as belezas do RN</h1>
+        <h2>Suas férias no melhor lugar!</h2>
+      </div>
+    </div>
+
+    <!-- Praias -->
+    <div class="praias w3-row-padding">
+      <div class="w3-third">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h2>Genipabu e suas <i>dunas</i></h2>
+            <p>As dunas e a incrível vista pro mar são seu cartão postal</p>
+          </div>
+          <img class="foto-praia" src="imagens/genipabu.jpg" alt="As dunas de Genipabu"
+          style="width:100%"/>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card" style="height: 415px">
+          <div class="w3-container">
+            <h2>Barra de Cunhaú: o <i>caribe</i> nordestino</h2>
+            <p> Sol, mar azul e belos passeios de barco</p>
+          </div>
+          <img class="foto-praia" src="imagens/barra-cunhau.jpg" alt="O mar da Barra de Cunhaú"
+        style="width:100%"/>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card" style="height: 415px">
+          <div class="w3-container">
+            <h2> As <i>piscinas naturais</i> de Galinhos</h2>
+            <p> Um paraíso que mescla beleza e sossego</p>
+          </div>
+          <img class="foto-praia" src="imagens/galinhos.jpg" alt="As piscinas de Galinhos"
+       style="width:100%"/>
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
